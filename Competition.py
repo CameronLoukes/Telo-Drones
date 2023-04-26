@@ -62,7 +62,7 @@ try:
         sendmsg('up 35')
         sendmsg('forward 273')
         sendmsg('go 175 0 50 30')
-        
+        sendmsg('curve 100 200 0 -100 200 0 60')
         sendmsg('land')
 
 
