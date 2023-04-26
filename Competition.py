@@ -57,10 +57,12 @@ try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
 
-        sendmsg('command', 0)
-        sendmsg('takeoff')
+        sendmsg('command')
+        sendmsg('takeoff', 10)
         sendmsg('up 35')
-        sendmsg('forward 275')
+        #sendmsg('forward 270')
+        #sendmsg('go 175 0 35 30')
+        
         sendmsg('land')
 
 
